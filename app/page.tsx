@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Profile from "@/profile";
+import Profile from "@/component/loginStatus";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
 
         <a href="/auth/login">Login</a>
         <a href="/auth/logout">Logout</a>
+        <Profile />
         <Image
           className="dark:invert"
           src="/next.svg"
